@@ -50,7 +50,8 @@ function createBoxes(amount) {
       "style",
       `width:${width + i * 10}px; height:${
         height + i * 10
-      }px; background-color:#${randomCollor()}; border: 1px; border-style: solid;`
+      }px; background-color:#${randomCollor()}; border: 0.1px; border-style: solid; position: absolute;
+      top: 182px; left: 8px; z-index: -${i};`
     );
     divBoxes.appendChild(newDiv);
   }
